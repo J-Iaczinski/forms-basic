@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+    <title>Basic Form Layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-img">
+        <img src="daniel-sessler-gyQHFmi_zcg-unsplash.jpg" alt="" />
+        <div class="position"><p class="pos-text">Lorem, ipsum.</p></div>
+      </div>
+      <div class="main-container">
+        <div class="head">
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sed
+            odit officiis molestiae excepturi magni tenetur, rerum amet natus
+            doloremque deleniti ratione reiciendis suscipit in?
+          </p>
+          <p class="hero-text">Lorem ipsum dolor sit.</p>
+        </div>
+        <form action="">
+          <div class="body">
+            <div class="form-container">
+              <p id="let-do-this">Let's do this!</p>
+
+              <div class="labels-container">
+                <div class="form-input">
+                  <label for="fist-name">First Name</label>
+                  <input required type="text" name="fist-name" id="fist-name" />
+                </div>
+                <div class="form-input">
+                  <label for="last-name">Last Name</label>
+                  <input required type="text" name="last-name" id="last-name" />
+                </div>
+              </div>
+              <div class="labels-container">
+                <div class="form-input">
+                  <label for="email">Email</label>
+                  <input type="email" name="fist-name" id="email" required />
+                </div>
+                <div class="form-input">
+                  <label for="phone-number">Phone number</label>
+                  <input
+                    type="number"
+                    name="phone"
+                    id="phone-number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="labels-container">
+                <div class="form-input">
+                  <label for="pssw">Password</label>
+                  <input type="password" name="fist-name" id="pssw" required />
+                </div>
+                <div class="form-input">
+                  <label for="pssw-confirm">Password Confirmation</label>
+                  <input
+                    type="password"
+                    name="pssw-confirm"
+                    id="pssw-confirm"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div>
+              <button class="btn" type="submit">Create a Account</button>
+            </div>
+            <div>
+              <p class="footer-text">
+                Already have an Account?
+                <a href="#" class="footer-link">Log in</a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

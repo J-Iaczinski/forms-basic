@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-img img {
+  height: 100vh;
+  width: 30vw;
+  object-fit: cover;
+  position: relative;
+}
+
+.position {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  font-weight: 900;
+  top: 20%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 30vw;
+  text-align: center;
+  min-height: 75px;
+  height: fit-content;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  background-color: rgb(240, 240, 240);
+  padding: 16vh 15% 5% 4%;
+}
+
+.main-container .hero-text {
+  overflow-wrap: break-word;
+  font-weight: bold;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  padding-top: 3%;
+}
+
+.body {
+  border-top: 1px solid rgba(0, 0, 0, 0.156);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 5px;
+}
+
+.form-container {
+  margin: 1vh 25% 5% 4%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex-wrap: 1;
+}
+
+.labels-container {
+  display: flex;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  gap: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-input {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.form-input input {
+  height: 25px;
+  padding: 0 6px;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+
+.form-input label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#let-do-this {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+  margin: 1vh 25% 5% 4%;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 0px;
+  height: 45px;
+  width: 200px;
+  background-color: rgb(0, 106, 255);
+  color: white;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 1px 4px 5px;
+  font-size: 1em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: rgb(0, 106, 255);
+  border: 1px solid rgb(0, 106, 255);
+}
+
+.footer .footer-text {
+  margin-top: 3vh;
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(0, 106, 255);
+  font-weight: 700;
+}
+
+/* Default border */
+input {
+  border: 1px solid rgba(0, 0, 0, 0.249);
+  outline: none;
+}
+
+/* Blue border on focus */
+input:focus {
+  border: 2px solid rgb(0, 100, 182);
+  box-shadow: rgba(0, 0, 0, 0.35) 1px 4px 5px;
+}
+
+/* Green border when valid */
+input:valid {
+  border: 2px solid rgb(11, 136, 0);
+}
+
+/* Red border only when the user has interacted and input is invalid */
+input:invalid:not(:focus):not(:placeholder-shown) {
+  border: 2px solid rgb(220, 3, 3);
+}
+
+/* Fallback for inputs without a placeholder */
+input:invalid:not(:focus):not(:user-valid) {
+  border: 2px solid rgb(220, 3, 3);
+}
